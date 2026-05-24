@@ -19,7 +19,6 @@ string matching.  Three AI techniques work together:
 ├── feedback_manager.py     # SVM active learning loop
 ├── text_extractor.py       # PDF / DOCX / HTML / TXT extraction
 ├── text_preprocessor.py    # Text cleaning + lemmatisation
-├── email_ingestor.py       # Gmail / Outlook / IMAP / EML ingestion
 ├── report_generator.py     # HTML + JSON report generation
 ├── requirements.txt        # Python dependencies
 └── data/                   # Created at runtime (FAISS index, feedback log)
@@ -30,7 +29,7 @@ string matching.  Three AI techniques work together:
 ```bash
 # 1. Create a virtual environment
 python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
+venv\Scripts\activate
 
 # 2. Install dependencies
 pip install -r requirements.txt
